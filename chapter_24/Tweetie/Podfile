@@ -1,0 +1,23 @@
+use_frameworks!
+
+abstract_target 'TweetieAbstract' do
+  pod 'Alamofire', '4.9.1'
+  
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RealmSwift'
+  pod 'RxRealm'
+  pod 'Unbox'
+  pod 'Then'
+  pod 'Reachability'
+  pod 'RxRealmDataSources'
+  
+  target 'Tweetie' do
+    pod 'RxDataSources'
+  end
+  
+  target 'TweetieTests' do
+    pod 'RxTest'
+    pod 'RxBlocking'
+  end
+end
